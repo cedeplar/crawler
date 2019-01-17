@@ -9,3 +9,9 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         self._gui = Ui_MainWindow()
         self._gui.setupUi(self)
+        self.reset()
+
+    def reset(self):
+        self._gui.progressBar.setValue(0)
+        self._gui.progressBar.setEnabled(False)
+        self._gui.lcs_counter.display(0)

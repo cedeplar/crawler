@@ -75,3 +75,5 @@ target/
 .idea/
 .cache/
 /tests/.cache/
+
+*.ui

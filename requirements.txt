@@ -1,1 +1,5 @@
 pyqt
+requests
+responses
+pandas
+numpy

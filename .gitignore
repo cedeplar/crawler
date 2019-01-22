@@ -76,4 +76,4 @@ target/
 .cache/
 /tests/.cache/
 
-*.ui
+*_ui.py

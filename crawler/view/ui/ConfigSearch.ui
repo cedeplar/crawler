@@ -1,0 +1,1628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfigSearch</class>
+ <widget class="QDialog" name="ConfigSearch">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Search Configuration</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../icons/cedeplar_small_logo.jpeg</normaloff>../../icons/cedeplar_small_logo.jpeg</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>5.000000000000000</double>
+  </property>
+  <widget class="QGroupBox" name="gb_tipo_imovel">
+   <property name="geometry">
+    <rect>
+     <x>38</x>
+     <y>70</y>
+     <width>741</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Tipo do Imovel</string>
+   </property>
+   <widget class="QCheckBox" name="cb_todos">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Todos</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cb_andar_pilotis">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Andar Pilotis</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_casa_comercial">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Casa Comercial</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_casa_geminada">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Casa Geminada</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_area_privativa">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Area Privativa</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_apart_hotel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apart-Hotel</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_apartamento">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apartamento</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_clube">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>59</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clube</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_chacara">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>39</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chacara</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_casa_condominio">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Casa em Condominio</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_barracao">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Barracao</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_conjunto_lojas">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>99</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Conjunto de Lojas</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_conjunto_salas">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>119</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Conjunto de Salas</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_duplex">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>139</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Duplex</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_estacionamento">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>159</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Estacionamento</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_empreendimento">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>179</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Empreendimento</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_flat">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Flat</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_galpao">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>60</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Galpao</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_garagem">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>80</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Garagem</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_haras">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>100</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Haras</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_hotel">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>120</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hotel</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_ilha">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>160</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ilha</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_kitchenette">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>180</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kitchenette</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_loft">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>200</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Loft</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_loja">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>40</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Loja</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_area_terreno">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>60</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lote, area terreno</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_motel">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>100</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Motel</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_pousada">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>120</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pousada</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_ponto_comercial">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>140</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ponto Comercial</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_predio">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>160</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Predio</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_sala">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>180</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sala</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_fazenda">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>199</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fazenda</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_lote_condominio">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>80</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lote em Condominio</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_casa">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Casa</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_hotel_fazenda">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>140</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hotel Fazenda</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_cobertura">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>79</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cobertura</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_shopping">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>200</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shopping</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_sobre_loja">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>80</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sobre loja</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_sitio">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>40</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sitio</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QCheckBox" name="cb_sobrado">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>60</y>
+      <width>85</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sobrado</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">bt_group_tipo_imovel</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_uncheck_all">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>200</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Uncheck All</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>799</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="lb_tipo_transacao">
+      <property name="text">
+       <string>Tipo da transacao:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cb_tipo_transacao">
+      <item>
+       <property name="text">
+        <string>Venda ou Locacao</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Locacao</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Venda</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>28</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Estado:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="combo_estado">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>11</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Acre</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Alagoas</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Amapa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Amazonas</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bahia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ceara</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Distrito Federal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Goias</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maranhao</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mato Grosso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mato Grosso do Sul</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minas Gerais</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Para</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Paraiba</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Parana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pernambuco</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Piaui</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rio de Janeiro</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rio Grande do Norte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rio Grande do Sul</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rondonia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Roraima</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Santa Catarina</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sao Paulo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sergipe</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tocantins</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>28</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="lb_cidade">
+      <property name="text">
+       <string>Cidade:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="txt_cidade">
+      <property name="text">
+       <string>Belo Horizonte</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>13</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_validar_cidade">
+      <property name="text">
+       <string>Validar Cidade</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>520</y>
+     <width>761</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="btn_salvar">
+      <property name="text">
+       <string>Salvar</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_cancelar">
+      <property name="text">
+       <string>Cancelar</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>358</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>320</y>
+     <width>561</width>
+     <height>156</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QCheckBox" name="cb_valor_minimo">
+          <property name="text">
+           <string>Valor Minimo:</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">bt_group_options_activated</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="text_valor_minimo">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QCheckBox" name="cb_valor_maximo">
+          <property name="text">
+           <string>Valor Maximo:</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">bt_group_options_activated</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="text_valor_maximo">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QCheckBox" name="cb_idade_minima">
+          <property name="text">
+           <string>Idade Minima:</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">bt_group_options_activated</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="text_idade_minima">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly|Qt::ImhPreferNumbers</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QCheckBox" name="cb_suites">
+          <property name="text">
+           <string>Suites:</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">bt_group_options_activated</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="text_suites">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly|Qt::ImhPreferNumbers</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QCheckBox" name="cb_banheiros">
+          <property name="text">
+           <string>Banheiros:</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">bt_group_options_activated</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="text_banheiros">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly|Qt::ImhPreferNumbers</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>60</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QCheckBox" name="cb_min_area">
+          <property name="text">
+           <string>Area Minima:</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">bt_group_options_activated</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="text_min_area">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QCheckBox" name="cb_max_area">
+          <property name="text">
+           <string>Area Maxima</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">bt_group_options_activated</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="text_max_area">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QCheckBox" name="cb_num_quartos">
+          <property name="text">
+           <string>Numeros de Quartos:</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">bt_group_options_activated</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="text_num_quartos">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly|Qt::ImhPreferNumbers</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QCheckBox" name="cb_num_garagem">
+          <property name="text">
+           <string>Vagas de Garagem</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">bt_group_options_activated</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="text_num_garagem">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly|Qt::ImhPreferNumbers</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="bt_group_tipo_imovel">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+  <buttongroup name="bt_group_options_activated">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+ </buttongroups>
+</ui>

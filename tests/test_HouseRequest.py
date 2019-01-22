@@ -23,21 +23,21 @@ def test_get_req_num_houses():
                '"quartos": null, "suites": null, "banhos": null, ' \
                '"vagas": null, "idadeMinima": null, "areaMinima": null, ' \
                '"areaMaxima": null, "bairros": [], "ordenar": null}'
-    assert house._create_get_req_num_houses('minas-gerais',
+    assert house.__url_num_houses('minas-gerais',
                                             'belo-horizonte',
                                             'apartamento') == expected
 
 @responses.activate
 def test_total_registros():
     house = HouseRequest()
-    url_num_houses = house._create_get_req_num_houses('minas-gerais',
+    url_num_houses = house.__url_num_houses('minas-gerais',
                                                       'belo-horizonte',
                                                       'apartamento')
     responses.add(responses.GET, url_num_houses,
                   json={'erro': False, 'mensagem': None,
                         'totalDeRegistros': 2211, 'unico': None,
                         'lista': None}, status=200)
-    assert house.number_houses('minas-gerais',
+    assert house._num_houses('minas-gerais',
                                'belo-horizonte',
                                'apartamento') == 2211
 
